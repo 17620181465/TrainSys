@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.train.mapper.UserMapper">
+	<!-- 插入一条数据 -->
+	<insert id="insertUser" parameterType="java.lang.String">
+		insert into TESTSSM(name,password) values(#{0},#{1})
+	</insert>	
+</mapper>
